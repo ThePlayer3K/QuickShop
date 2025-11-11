@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\QuickShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\aluno\\desktop\\quickshop\\produtosvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:produtosvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\aluno\\desktop\\quickshop\\cadastrovendas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:cadastrovendas.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|C:\\Users\\Aluno\\Desktop\\QuickShop\\cadastrovendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:cadastrovendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\aluno\\desktop\\quickshop\\cadastrovendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:cadastrovendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\aluno\\desktop\\quickshop\\maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\aluno\\desktop\\quickshop\\visualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:visualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|C:\\Users\\Aluno\\Desktop\\QuickShop\\maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|C:\\Users\\Aluno\\Desktop\\QuickShop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|C:\\Users\\Aluno\\Desktop\\QuickShop\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroVendas.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.Designer.cs",
+              "RelativeDocumentMoniker": "CadastroVendas.Designer.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.Designer.cs",
+              "RelativeToolTip": "CadastroVendas.Designer.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAIwMsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T23:32:44.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdutosVenda.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\ProdutosVenda.cs",
+              "RelativeDocumentMoniker": "ProdutosVenda.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\ProdutosVenda.cs",
+              "RelativeToolTip": "ProdutosVenda.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:54:10.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainGerente.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\MainGerente.cs",
+              "RelativeDocumentMoniker": "MainGerente.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\MainGerente.cs",
+              "RelativeToolTip": "MainGerente.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwFkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:50:58.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastroVendas.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.cs",
+              "RelativeDocumentMoniker": "CadastroVendas.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.cs",
+              "RelativeToolTip": "CadastroVendas.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:47:39.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CadastroVendas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.cs",
+              "RelativeDocumentMoniker": "CadastroVendas.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\CadastroVendas.cs [Design]",
+              "RelativeToolTip": "CadastroVendas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:07:11.094Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VisualizarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\VisualizarProduto.cs",
+              "RelativeDocumentMoniker": "VisualizarProduto.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\VisualizarProduto.cs",
+              "RelativeToolTip": "VisualizarProduto.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA9wA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:42:00.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwD4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:18:19.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainGerente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\MainGerente.cs",
+              "RelativeDocumentMoniker": "MainGerente.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\MainGerente.cs [Design]",
+              "RelativeToolTip": "MainGerente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T13:21:24.403Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\QuickShop\\Conta.cs",
+              "RelativeDocumentMoniker": "Conta.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\QuickShop\\Conta.cs",
+              "RelativeToolTip": "Conta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T20:52:30.088Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
