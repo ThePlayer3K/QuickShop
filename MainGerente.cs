@@ -89,5 +89,17 @@ namespace QuickShop
             CadastroVendas cadastroVendas = new CadastroVendas();
             cadastroVendas.Show();
         }
+
+        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CadastrarMetPag cadastrarMetPag = new CadastrarMetPag();
+            cadastrarMetPag.Show();
+        }
+
+        private void editarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            EditarMetPag editarMetPag = new EditarMetPag();
+            editarMetPag.Show();
+        }
     }
 }

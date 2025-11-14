@@ -53,15 +53,59 @@ namespace QuickShop
             string nome = Program.produtos.FirstOrDefault(p => p.getId() == codigo).getNome();
             decimal preco_un = Program.produtos.FirstOrDefault(p => p.getId() == codigo).getPreco();
             ProdutoVenda pv = new ProdutoVenda(codigo, quantidade, nome, preco_un);
-            produtosVenda.Add(pv);
+            bool produto_repetido = false;
             foreach (ProdutoVenda ProdVenda in produtosVenda)
             {
-                ListViewItem item = new ListViewItem(ProdVenda.getId().ToString());
-                item.SubItems.Add(ProdVenda.getNome());
-                item.SubItems.Add(ProdVenda.getPreco().ToString());
-                item.SubItems.Add(ProdVenda.getQuantidade().ToString());
+                if (ProdVenda.getId() == codigo)
+                {
+                    ProdVenda.setQuantidade(ProdVenda.getQuantidade() + quantidade);
+                    produto_repetido = true;
+                    foreach (ListViewItem item in produtosAtivos.Items)
+                    {
+                        if (item.Text == codigo.ToString())
+                        {
+                            item.SubItems[3].Text = ProdVenda.getQuantidade().ToString();
+                        }
+                    }
+
+                }
+            }
+            if (!produto_repetido)
+            {
+                produtosVenda.Add(pv);
+                ListViewItem item = new ListViewItem(pv.getId().ToString());
+                item.SubItems.Add(pv.getNome());
+                item.SubItems.Add(pv.getPreco().ToString("F2"));
+                item.SubItems.Add(pv.getQuantidade().ToString());
                 produtosAtivos.Items.Add(item);
             }
+            decimal total = 0;
+            foreach (ListViewItem item in produtosAtivos.Items)
+            {
+                total += decimal.Parse(item.SubItems[2].Text) * int.Parse(item.SubItems[3].Text);
+            }
+            total_vista.Text = "Total a vista: R$" + total.ToString("F2");
+
+        }
+
+        private void removerProd_Click(object sender, EventArgs e)
+        {
+            int codigo = int.Parse(produtosAtivos.SelectedItems[0].Text);
+            foreach (ProdutoVenda ProdVenda in produtosVenda)
+            {
+                if (ProdVenda.getId() == codigo)
+                {
+                    produtosVenda.Remove(ProdVenda);
+                    break;
+                }
+            }
+            produtosAtivos.SelectedItems[0].Remove();
+            decimal total = 0;
+            foreach (ListViewItem item in produtosAtivos.Items)
+            {
+                total += decimal.Parse(item.SubItems[2].Text) * int.Parse(item.SubItems[3].Text);
+            }
+            total_vista.Text = "Total a vista: R$" + total.ToString("F2");
         }
     }
 }

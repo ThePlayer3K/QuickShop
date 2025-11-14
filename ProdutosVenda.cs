@@ -38,5 +38,10 @@ namespace QuickShop
         {
             return this.preco;
         }
+
+        public void setQuantidade(int quantia)
+        {
+            this.quantidade = quantia;
+        }
     }
 }

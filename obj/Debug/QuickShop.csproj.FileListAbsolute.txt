@@ -92,3 +92,6 @@ C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.pdb
 C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.CadastroVendas.resources
 C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.DeletarProduto.resources
 C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.VisualizarProduto.resources
+C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.SelecionarMetPag.resources
+C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.CadastrarMetPag.resources
+C:\Users\Aluno\Desktop\QuickShop\obj\Debug\QuickShop.EditarMetPag.resources

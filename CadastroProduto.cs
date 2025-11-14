@@ -52,6 +52,7 @@ namespace QuickShop
                 }
                 Produto novoProduto = new Produto(int.Parse(txtCod.Text), txtNome.Text, decimal.Parse(txtPreco.Text), int.Parse(txtQtd.Text));
                 Program.produtos.Add(novoProduto);
+                Program.produtos_historicos.Add(novoProduto);
                 novoProduto.adicionarProduto(); 
                 MessageBox.Show("Produto cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();

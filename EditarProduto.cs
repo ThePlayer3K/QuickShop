@@ -37,7 +37,8 @@ namespace QuickShop
                 decimal preco = decimal.Parse(txt_preco.Text);
             } catch
             {
-                MessageBox.Show("Preço inválido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (txt_preco.Text != "")
+                    MessageBox.Show("Preço inválido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             try
             {
@@ -50,7 +51,8 @@ namespace QuickShop
             }
             catch
             {
-                MessageBox.Show("Quantidade em estoque inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (text_qtd.Text != "")
+                    MessageBox.Show("Quantidade em estoque inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
                 bool encontrado = false;
 
@@ -82,6 +84,24 @@ namespace QuickShop
                         prod.setPreco(decimal.Parse(txt_preco.Text));
                     }
                     if(text_qtd.Text != "")
+                    {
+                        prod.setQtdEstoque(int.Parse(text_qtd.Text));
+                    }
+                }
+            }
+            foreach (Produto prod in Program.produtos_historicos)
+            {
+                if (prod.getId() == codProduto)
+                {
+                    if (txt_nome.Text != "")
+                    {
+                        prod.setNome(txt_nome.Text);
+                    }
+                    if (txt_preco.Text != "")
+                    {
+                        prod.setPreco(decimal.Parse(txt_preco.Text));
+                    }
+                    if (text_qtd.Text != "")
                     {
                         prod.setQtdEstoque(int.Parse(text_qtd.Text));
                     }
