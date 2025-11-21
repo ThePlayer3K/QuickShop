@@ -81,6 +81,7 @@
             this.Controls.Add(this.txt_Produto);
             this.Name = "DeletarProduto";
             this.Text = "Deletar Produto";
+            this.Load += new System.EventHandler(this.DeletarProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

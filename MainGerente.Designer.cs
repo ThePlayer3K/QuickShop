@@ -133,14 +133,14 @@
             // cadastrarToolStripMenuItem1
             // 
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
             // visualizarToolStripMenuItem1
             // 
             this.visualizarToolStripMenuItem1.Name = "visualizarToolStripMenuItem1";
-            this.visualizarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.visualizarToolStripMenuItem1.Text = "Visualizar";
             // 
             // despesasToolStripMenuItem
@@ -157,25 +157,25 @@
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // visualizarToolStripMenuItem2
             // 
             this.visualizarToolStripMenuItem2.Name = "visualizarToolStripMenuItem2";
-            this.visualizarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.visualizarToolStripMenuItem2.Text = "Visualizar";
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             // 
             // removerToolStripMenuItem1
             // 
             this.removerToolStripMenuItem1.Name = "removerToolStripMenuItem1";
-            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.removerToolStripMenuItem1.Text = "Remover";
             // 
             // fluxoDeCaixaToolStripMenuItem
@@ -207,6 +207,7 @@
             this.editarToolStripMenuItem2.Name = "editarToolStripMenuItem2";
             this.editarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.editarToolStripMenuItem2.Text = "Visualizar";
+            this.editarToolStripMenuItem2.Click += new System.EventHandler(this.editarToolStripMenuItem2_Click);
             // 
             // editarToolStripMenuItem3
             // 
@@ -220,6 +221,7 @@
             this.removerToolStripMenuItem2.Name = "removerToolStripMenuItem2";
             this.removerToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.removerToolStripMenuItem2.Text = "Remover";
+            this.removerToolStripMenuItem2.Click += new System.EventHandler(this.removerToolStripMenuItem2_Click);
             // 
             // contasToolStripMenuItem
             // 

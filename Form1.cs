@@ -54,6 +54,7 @@ namespace QuickShop
                                 Form MainGerente = new MainGerente(usuario);
                                 MainGerente.Show();
                             }
+                            Program.conta_ativa = login.getId();
                         }
                         else
                         {

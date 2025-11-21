@@ -44,5 +44,10 @@ namespace QuickShop
             e.Cancel = true;
             e.NewWidth = listaProdutos.Columns[e.ColumnIndex].Width;
         }
+
+        private void VisualizarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -20,6 +20,7 @@ namespace QuickShop
         public static List<MetPag> metodos_pag;
         public static List<MetPag> metodos_pag_historicos;
         public static MySqlConnection conexao;
+        public static int conta_ativa;
         [STAThread]
         static void Main()
         {

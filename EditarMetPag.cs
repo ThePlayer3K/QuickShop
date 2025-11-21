@@ -28,6 +28,12 @@ namespace QuickShop
 
         private void btn_editar_Click(object sender, EventArgs e)
         {
+
+            if (selecionarItem.SelectedText == null || selecionarItem.SelectedText.Trim() == "")
+            {
+                MessageBox.Show("Selecione um método de pagamento para editar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (txt_nome == null || txt_nome.Text.Trim() == "")
             {
                 MessageBox.Show("Nome inválido! Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -47,7 +53,14 @@ namespace QuickShop
             MetPag metodoParaAlterar = Program.metodos_pag.FirstOrDefault(metodo => metodo.getNome() == selecionarItem.SelectedText);
             metodoParaAlterar.setNome(nome);
             metodoParaAlterar.setTaxa(taxa);
+            MessageBox.Show("Método de pagamento alterado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
 
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

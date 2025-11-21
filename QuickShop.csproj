@@ -135,6 +135,12 @@
     <Compile Include="EditarProduto.Designer.cs">
       <DependentUpon>EditarProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExcluirMetPag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirMetPag.Designer.cs">
+      <DependentUpon>ExcluirMetPag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,17 +158,29 @@
     <Compile Include="ProdutosVenda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelecionarMetPag.cs">
+    <Compile Include="SelecionarMetodoVenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelecionarMetPag.Designer.cs">
-      <DependentUpon>SelecionarMetPag.cs</DependentUpon>
+    <Compile Include="SelecionarMetodoVenda.Designer.cs">
+      <DependentUpon>SelecionarMetodoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarMetPag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualizarMetPag.Designer.cs">
+      <DependentUpon>VisualizarMetPag.cs</DependentUpon>
     </Compile>
     <Compile Include="VisualizarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VisualizarProduto.Designer.cs">
       <DependentUpon>VisualizarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualizarVendas.Designer.cs">
+      <DependentUpon>VisualizarVendas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CadastrarMetPag.resx">
       <DependentUpon>CadastrarMetPag.cs</DependentUpon>
@@ -182,6 +200,9 @@
     <EmbeddedResource Include="EditarProduto.resx">
       <DependentUpon>EditarProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirMetPag.resx">
+      <DependentUpon>ExcluirMetPag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,11 +219,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SelecionarMetPag.resx">
-      <DependentUpon>SelecionarMetPag.cs</DependentUpon>
+    <EmbeddedResource Include="SelecionarMetodoVenda.resx">
+      <DependentUpon>SelecionarMetodoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarMetPag.resx">
+      <DependentUpon>VisualizarMetPag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisualizarProduto.resx">
       <DependentUpon>VisualizarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarVendas.resx">
+      <DependentUpon>VisualizarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -46,6 +46,12 @@ namespace QuickShop
             MessageBox.Show("Método de pagamento cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Program.metodos_pag.Add(metPag);
             Program.metodos_pag_historicos.Add(metPag);
+            this.Hide();
+        }
+
+        private void CadastrarMetPag_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

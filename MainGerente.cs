@@ -101,5 +101,17 @@ namespace QuickShop
             EditarMetPag editarMetPag = new EditarMetPag();
             editarMetPag.Show();
         }
+
+        private void editarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            VisualizarMetPag visualizarMetPag = new VisualizarMetPag();
+            visualizarMetPag.Show();
+        }
+
+        private void removerToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ExcluirMetPag excluirMetPag = new ExcluirMetPag();
+            excluirMetPag.Show();
+        }
     }
 }

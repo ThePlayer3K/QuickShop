@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuickShop
 {
-    internal class ProdutoVenda
+    public class ProdutoVenda
     {
         private int id, quantidade;
         private string nome;

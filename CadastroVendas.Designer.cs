@@ -43,16 +43,16 @@
             this.preco_un = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.qtd_estoque = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.resultadoFinal = new System.Windows.Forms.TabPage();
+            this.removerProd = new System.Windows.Forms.Button();
+            this.btn_confirmar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.total_vista = new System.Windows.Forms.Label();
             this.produtosAtivos = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.total_vista = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.removerProd = new System.Windows.Forms.Button();
             this.abasCadastroVendas.SuspendLayout();
             this.buscarProdutos.SuspendLayout();
             this.resultadoFinal.SuspendLayout();
@@ -109,6 +109,7 @@
             this.btn_Cancelar.TabIndex = 5;
             this.btn_Cancelar.Text = "Cancelar Venda";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // qtd
             // 
@@ -194,7 +195,7 @@
             // resultadoFinal
             // 
             this.resultadoFinal.Controls.Add(this.removerProd);
-            this.resultadoFinal.Controls.Add(this.button2);
+            this.resultadoFinal.Controls.Add(this.btn_confirmar);
             this.resultadoFinal.Controls.Add(this.button1);
             this.resultadoFinal.Controls.Add(this.total_vista);
             this.resultadoFinal.Controls.Add(this.produtosAtivos);
@@ -205,6 +206,49 @@
             this.resultadoFinal.TabIndex = 1;
             this.resultadoFinal.Text = "Resultado Final";
             this.resultadoFinal.UseVisualStyleBackColor = true;
+            // 
+            // removerProd
+            // 
+            this.removerProd.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.removerProd.Location = new System.Drawing.Point(259, 366);
+            this.removerProd.Name = "removerProd";
+            this.removerProd.Size = new System.Drawing.Size(156, 60);
+            this.removerProd.TabIndex = 8;
+            this.removerProd.Text = "Remover Produto";
+            this.removerProd.UseVisualStyleBackColor = true;
+            this.removerProd.Click += new System.EventHandler(this.removerProd_Click);
+            // 
+            // btn_confirmar
+            // 
+            this.btn_confirmar.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_confirmar.Location = new System.Drawing.Point(450, 366);
+            this.btn_confirmar.Name = "btn_confirmar";
+            this.btn_confirmar.Size = new System.Drawing.Size(156, 60);
+            this.btn_confirmar.TabIndex = 7;
+            this.btn_confirmar.Text = "Confirmar Venda";
+            this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.button1.Location = new System.Drawing.Point(57, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 60);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cancelar Venda";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // total_vista
+            // 
+            this.total_vista.AutoSize = true;
+            this.total_vista.Font = new System.Drawing.Font("Segoe UI", 30F);
+            this.total_vista.Location = new System.Drawing.Point(178, 276);
+            this.total_vista.Name = "total_vista";
+            this.total_vista.Size = new System.Drawing.Size(295, 54);
+            this.total_vista.TabIndex = 2;
+            this.total_vista.Text = "Total a vista: R$";
             // 
             // produtosAtivos
             // 
@@ -252,47 +296,6 @@
             // 
             this.timer1.Enabled = true;
             // 
-            // total_vista
-            // 
-            this.total_vista.AutoSize = true;
-            this.total_vista.Font = new System.Drawing.Font("Segoe UI", 30F);
-            this.total_vista.Location = new System.Drawing.Point(178, 276);
-            this.total_vista.Name = "total_vista";
-            this.total_vista.Size = new System.Drawing.Size(295, 54);
-            this.total_vista.TabIndex = 2;
-            this.total_vista.Text = "Total a vista: R$";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button1.Location = new System.Drawing.Point(57, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 60);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cancelar Venda";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button2.Location = new System.Drawing.Point(450, 366);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 60);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Confirmar Venda";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // removerProd
-            // 
-            this.removerProd.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.removerProd.Location = new System.Drawing.Point(259, 366);
-            this.removerProd.Name = "removerProd";
-            this.removerProd.Size = new System.Drawing.Size(156, 60);
-            this.removerProd.TabIndex = 8;
-            this.removerProd.Text = "Remover Produto";
-            this.removerProd.UseVisualStyleBackColor = true;
-            this.removerProd.Click += new System.EventHandler(this.removerProd_Click);
-            // 
             // CadastroVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,7 +339,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label total_vista;
         private System.Windows.Forms.Button removerProd;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_confirmar;
         private System.Windows.Forms.Button button1;
     }
 }

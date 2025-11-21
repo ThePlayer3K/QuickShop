@@ -24,8 +24,22 @@ namespace QuickShop
         {
             this.nome = nome;
             this.taxa = taxa;
+            string obterId = "SELECT id FROM metodo_pag WHERE nome = @nome AND taxa = @taxa AND ativo = true";
+            MySqlCommand comandoId = new MySqlCommand(obterId, Program.conexao);
+            comandoId.Parameters.AddWithValue("@nome", nome);
+            comandoId.Parameters.AddWithValue("@taxa", taxa);
+            MySqlDataReader leitorId = comandoId.ExecuteReader();
+            while (leitorId.Read())
+            {
+                this.id = leitorId.GetInt32("id");
+            }
+            leitorId.Close();
         }
 
+        public int getId()
+        {
+            return id;
+        }
         public string getNome()
         {
             return nome;
@@ -72,6 +86,7 @@ namespace QuickShop
             {
                 this.id = leitorId.GetInt32("id");
             }
+            leitorId.Close();
         }
 
         public void removerBanco()
@@ -81,5 +96,12 @@ namespace QuickShop
             comandoDelete.Parameters.AddWithValue("@id", this.id);
             comandoDelete.ExecuteNonQuery();
         }
+
+        public decimal ganhoLiquido(decimal ganhoBruto)
+        {
+            decimal multiplicador = 1 - (taxa / 100);
+            return ganhoBruto * multiplicador;
+        }
+
     }
 }

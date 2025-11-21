@@ -63,5 +63,10 @@ namespace QuickShop
                 return;
             }
         }
+
+        private void DeletarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }   
 }

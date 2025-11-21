@@ -102,6 +102,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CadastrarMetPag";
             this.Text = "Cadastrar Mét. Pag.";
+            this.Load += new System.EventHandler(this.CadastrarMetPag_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

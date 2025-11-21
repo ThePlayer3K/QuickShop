@@ -98,6 +98,7 @@
             this.Controls.Add(this.btnFechar);
             this.Name = "VisualizarProduto";
             this.Text = "Visualizar Produto";
+            this.Load += new System.EventHandler(this.VisualizarProduto_Load);
             this.ResumeLayout(false);
 
         }

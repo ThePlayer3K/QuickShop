@@ -107,5 +107,22 @@ namespace QuickShop
             }
             total_vista.Text = "Total a vista: R$" + total.ToString("F2");
         }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_confirmar_Click(object sender, EventArgs e)
+        {
+            SelecionarMetodoVenda selecionarMetodoVenda = new SelecionarMetodoVenda(produtosVenda, this);
+            selecionarMetodoVenda.ShowDialog();
+        }
     }
 }
