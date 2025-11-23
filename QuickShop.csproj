@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastrarDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarDespesa.Designer.cs">
+      <DependentUpon>CadastrarDespesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarMetPag.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="DeletarProduto.Designer.cs">
       <DependentUpon>DeletarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarDespesas.Designer.cs">
+      <DependentUpon>EditarDespesas.cs</DependentUpon>
     </Compile>
     <Compile Include="EditarMetPag.cs">
       <SubType>Form</SubType>
@@ -158,11 +170,23 @@
     <Compile Include="ProdutosVenda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoverDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoverDespesa.Designer.cs">
+      <DependentUpon>RemoverDespesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelecionarMetodoVenda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SelecionarMetodoVenda.Designer.cs">
       <DependentUpon>SelecionarMetodoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualizarDespesa.Designer.cs">
+      <DependentUpon>VisualizarDespesa.cs</DependentUpon>
     </Compile>
     <Compile Include="VisualizarMetPag.cs">
       <SubType>Form</SubType>
@@ -182,6 +206,9 @@
     <Compile Include="VisualizarVendas.Designer.cs">
       <DependentUpon>VisualizarVendas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CadastrarDespesa.resx">
+      <DependentUpon>CadastrarDespesa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarMetPag.resx">
       <DependentUpon>CadastrarMetPag.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeletarProduto.resx">
       <DependentUpon>DeletarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarDespesas.resx">
+      <DependentUpon>EditarDespesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarMetPag.resx">
       <DependentUpon>EditarMetPag.cs</DependentUpon>
@@ -219,8 +249,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RemoverDespesa.resx">
+      <DependentUpon>RemoverDespesa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelecionarMetodoVenda.resx">
       <DependentUpon>SelecionarMetodoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarDespesa.resx">
+      <DependentUpon>VisualizarDespesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisualizarMetPag.resx">
       <DependentUpon>VisualizarMetPag.cs</DependentUpon>

@@ -41,6 +41,7 @@
             this.coluna_codigo,
             this.coluna_nome,
             this.coluna_taxa});
+            this.lista_metodos.GridLines = true;
             this.lista_metodos.HideSelection = false;
             this.lista_metodos.Location = new System.Drawing.Point(12, 12);
             this.lista_metodos.Name = "lista_metodos";

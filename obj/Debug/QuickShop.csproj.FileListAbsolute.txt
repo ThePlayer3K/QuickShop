@@ -142,7 +142,6 @@ C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.ExcluirMetPag.res
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.login.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.MainGerente.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.Properties.Resources.resources
-C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.SelecionarMetPag.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.VisualizarProduto.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.csproj.GenerateResource.cache
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.csproj.CoreCompileInputs.cache
@@ -151,3 +150,8 @@ C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.exe
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.pdb
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.SelecionarMetodoVenda.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.VisualizarMetPag.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.VisualizarVendas.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.CadastrarDespesa.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.EditarDespesa.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.RemoverDespesa.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.VisualizarDespesas.resources

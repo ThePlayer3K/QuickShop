@@ -50,11 +50,6 @@ namespace QuickShop
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
            CadastroProduto cadastroProduto = new CadastroProduto();
@@ -112,6 +107,37 @@ namespace QuickShop
         {
             ExcluirMetPag excluirMetPag = new ExcluirMetPag();
             excluirMetPag.Show();
+        }
+
+        private void visualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            VisualizarVendas visualizarVendas = new VisualizarVendas();
+            visualizarVendas.Show();
+        }
+
+        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CadastrarDespesa cadastrarDespesa = new CadastrarDespesa();
+            cadastrarDespesa.Show();
+
+        }
+
+        private void visualizarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            VisualizarDespesas visualizarDespesas = new VisualizarDespesas();
+            visualizarDespesas.Show();
+        }
+
+        private void editarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EditarDespesa editarDespesa = new EditarDespesa();
+            editarDespesa.Show();
+        }
+
+        private void removerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RemoverDespesa removerDespesa = new RemoverDespesa();
+            removerDespesa.Show();
         }
     }
 }

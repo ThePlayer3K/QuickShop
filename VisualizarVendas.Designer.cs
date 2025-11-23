@@ -36,15 +36,17 @@
             this.btn_fechar = new System.Windows.Forms.Button();
             this.abas = new System.Windows.Forms.TabControl();
             this.aba_valores = new System.Windows.Forms.TabPage();
-            this.aba_produtos = new System.Windows.Forms.TabPage();
             this.lista_valores = new System.Windows.Forms.ListView();
             this.coluna_metodo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coluna_bruto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coluna_liquido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.aba_produtos = new System.Windows.Forms.TabPage();
             this.lista_produtos = new System.Windows.Forms.ListView();
             this.coluna_codigo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coluna_nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.coluna_qtd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbl_bruto = new System.Windows.Forms.Label();
+            this.lbl_liquido = new System.Windows.Forms.Label();
             this.abas.SuspendLayout();
             this.aba_valores.SuspendLayout();
             this.aba_produtos.SuspendLayout();
@@ -70,7 +72,7 @@
             // 
             // btn_procurar
             // 
-            this.btn_procurar.Location = new System.Drawing.Point(480, 365);
+            this.btn_procurar.Location = new System.Drawing.Point(483, 444);
             this.btn_procurar.Name = "btn_procurar";
             this.btn_procurar.Size = new System.Drawing.Size(161, 52);
             this.btn_procurar.TabIndex = 2;
@@ -98,7 +100,7 @@
             // 
             // btn_fechar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(30, 365);
+            this.btn_fechar.Location = new System.Drawing.Point(30, 444);
             this.btn_fechar.Name = "btn_fechar";
             this.btn_fechar.Size = new System.Drawing.Size(161, 52);
             this.btn_fechar.TabIndex = 5;
@@ -110,7 +112,7 @@
             // 
             this.abas.Controls.Add(this.aba_valores);
             this.abas.Controls.Add(this.aba_produtos);
-            this.abas.Location = new System.Drawing.Point(30, 80);
+            this.abas.Location = new System.Drawing.Point(30, 64);
             this.abas.Name = "abas";
             this.abas.SelectedIndex = 0;
             this.abas.Size = new System.Drawing.Size(603, 258);
@@ -119,24 +121,13 @@
             // aba_valores
             // 
             this.aba_valores.Controls.Add(this.lista_valores);
-            this.aba_valores.Location = new System.Drawing.Point(4, 22);
+            this.aba_valores.Location = new System.Drawing.Point(4, 24);
             this.aba_valores.Name = "aba_valores";
             this.aba_valores.Padding = new System.Windows.Forms.Padding(3);
-            this.aba_valores.Size = new System.Drawing.Size(595, 232);
+            this.aba_valores.Size = new System.Drawing.Size(595, 230);
             this.aba_valores.TabIndex = 0;
             this.aba_valores.Text = "Valores";
             this.aba_valores.UseVisualStyleBackColor = true;
-            // 
-            // aba_produtos
-            // 
-            this.aba_produtos.Controls.Add(this.lista_produtos);
-            this.aba_produtos.Location = new System.Drawing.Point(4, 22);
-            this.aba_produtos.Name = "aba_produtos";
-            this.aba_produtos.Padding = new System.Windows.Forms.Padding(3);
-            this.aba_produtos.Size = new System.Drawing.Size(595, 232);
-            this.aba_produtos.TabIndex = 1;
-            this.aba_produtos.Text = "Produtos";
-            this.aba_produtos.UseVisualStyleBackColor = true;
             // 
             // lista_valores
             // 
@@ -144,6 +135,7 @@
             this.coluna_metodo,
             this.coluna_bruto,
             this.coluna_liquido});
+            this.lista_valores.GridLines = true;
             this.lista_valores.HideSelection = false;
             this.lista_valores.Location = new System.Drawing.Point(0, 0);
             this.lista_valores.Name = "lista_valores";
@@ -167,12 +159,24 @@
             this.coluna_liquido.Text = "Valor Líquido";
             this.coluna_liquido.Width = 180;
             // 
+            // aba_produtos
+            // 
+            this.aba_produtos.Controls.Add(this.lista_produtos);
+            this.aba_produtos.Location = new System.Drawing.Point(4, 24);
+            this.aba_produtos.Name = "aba_produtos";
+            this.aba_produtos.Padding = new System.Windows.Forms.Padding(3);
+            this.aba_produtos.Size = new System.Drawing.Size(595, 230);
+            this.aba_produtos.TabIndex = 1;
+            this.aba_produtos.Text = "Produtos";
+            this.aba_produtos.UseVisualStyleBackColor = true;
+            // 
             // lista_produtos
             // 
             this.lista_produtos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.coluna_codigo,
             this.coluna_nome,
             this.coluna_qtd});
+            this.lista_produtos.GridLines = true;
             this.lista_produtos.HideSelection = false;
             this.lista_produtos.Location = new System.Drawing.Point(0, -2);
             this.lista_produtos.Name = "lista_produtos";
@@ -196,11 +200,33 @@
             this.coluna_qtd.Text = "Qtd. Vendida";
             this.coluna_qtd.Width = 120;
             // 
+            // lbl_bruto
+            // 
+            this.lbl_bruto.AutoSize = true;
+            this.lbl_bruto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbl_bruto.Location = new System.Drawing.Point(258, 347);
+            this.lbl_bruto.Name = "lbl_bruto";
+            this.lbl_bruto.Size = new System.Drawing.Size(114, 20);
+            this.lbl_bruto.TabIndex = 7;
+            this.lbl_bruto.Text = "Total bruto: R$";
+            // 
+            // lbl_liquido
+            // 
+            this.lbl_liquido.AutoSize = true;
+            this.lbl_liquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbl_liquido.Location = new System.Drawing.Point(250, 380);
+            this.lbl_liquido.Name = "lbl_liquido";
+            this.lbl_liquido.Size = new System.Drawing.Size(122, 20);
+            this.lbl_liquido.TabIndex = 8;
+            this.lbl_liquido.Text = "Total líquido: R$";
+            // 
             // VisualizarVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 444);
+            this.ClientSize = new System.Drawing.Size(677, 517);
+            this.Controls.Add(this.lbl_liquido);
+            this.Controls.Add(this.lbl_bruto);
             this.Controls.Add(this.abas);
             this.Controls.Add(this.btn_fechar);
             this.Controls.Add(this.picker_final);
@@ -238,5 +264,7 @@
         private System.Windows.Forms.ColumnHeader coluna_codigo;
         private System.Windows.Forms.ColumnHeader coluna_nome;
         private System.Windows.Forms.ColumnHeader coluna_qtd;
+        private System.Windows.Forms.Label lbl_bruto;
+        private System.Windows.Forms.Label lbl_liquido;
     }
 }

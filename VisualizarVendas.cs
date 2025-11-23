@@ -36,18 +36,22 @@ namespace QuickShop
             MySqlCommand comandoMetodos = new MySqlCommand(procurarMetodos, Program.conexao);
             comandoMetodos.Parameters.AddWithValue("@dataInicio", dataInicio);
             comandoMetodos.Parameters.AddWithValue("@dataFim", dataFim);
+            lista_valores.Items.Clear();
+            decimal total_bruto = 0;
+            decimal total_liquido = 0;
             try
             {
                 MySqlDataReader leitorMetodos = comandoMetodos.ExecuteReader();
-                lista_valores.Clear();
                 while (leitorMetodos.Read())
                 {
                     string nomeMetodo = leitorMetodos.GetString(0);
                     decimal valorBruto = leitorMetodos.GetDecimal(1);
                     decimal valorLiquido = leitorMetodos.GetDecimal(2);
+                    total_bruto += valorBruto;
+                    total_liquido += valorLiquido;
                     ListViewItem item = new ListViewItem(nomeMetodo);
-                    item.SubItems.Add(valorBruto.ToString("F2"));
-                    item.SubItems.Add(valorLiquido.ToString("F2"));
+                    item.SubItems.Add("R$" + valorBruto.ToString("F2"));
+                    item.SubItems.Add("R$" + valorLiquido.ToString("F2"));
                     lista_valores.Items.Add(item);
                 }
                 leitorMetodos.Close();
@@ -56,14 +60,16 @@ namespace QuickShop
             {
                 MessageBox.Show("Ocorreu um erro ao buscar os dados de vendas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            lbl_bruto.Text = "Total Bruto: R$ " + total_bruto.ToString("F2");
+            lbl_liquido.Text = "Total Líquido: R$ " + total_liquido.ToString("F2");
             string procrurarProdutos = "SELECT produtos.id, produtos.nome, SUM(produtos_venda.quantidade) FROM produtos INNER JOIN produtos_venda ON produtos.id = produtos_venda.id_produto INNER JOIN vendas ON produtos_venda.id_venda = vendas.id WHERE vendas.data BETWEEN @dataInicio AND @dataFim GROUP BY produtos.id";
             MySqlCommand comandoProdutos = new MySqlCommand(procrurarProdutos, Program.conexao);
             comandoProdutos.Parameters.AddWithValue("@dataInicio", dataInicio);
             comandoProdutos.Parameters.AddWithValue("@dataFim", dataFim);
+            lista_produtos.Items.Clear();
             try
             {
                 MySqlDataReader leitorProdutos = comandoProdutos.ExecuteReader();
-                lista_produtos.Clear();
                 while (leitorProdutos.Read())
                 {
                     int idProduto = leitorProdutos.GetInt32(0);

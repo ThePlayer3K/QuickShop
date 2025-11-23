@@ -52,6 +52,7 @@
             this.lista_metodos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.coluna_metodo,
             this.coluna_liquido});
+            this.lista_metodos.GridLines = true;
             this.lista_metodos.HideSelection = false;
             this.lista_metodos.Location = new System.Drawing.Point(12, 81);
             this.lista_metodos.MultiSelect = false;
