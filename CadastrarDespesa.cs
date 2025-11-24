@@ -18,6 +18,14 @@ namespace QuickShop
             InitializeComponent();
         }
 
+        public CadastrarDespesa(string nome, string valor, DateTime data)
+        {
+            InitializeComponent();
+            txt_nome.Text = nome;
+            txt_valor.Text = valor;
+            picker_data.Value = data;
+
+        }
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Hide();

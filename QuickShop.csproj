@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlterarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarConta.Designer.cs">
+      <DependentUpon>AlterarConta.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarDespesa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,7 +128,19 @@
     <Compile Include="CadastroVendas.Designer.cs">
       <DependentUpon>CadastroVendas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Comissoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comissoes.Designer.cs">
+      <DependentUpon>Comissoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conta.cs" />
+    <Compile Include="CriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarConta.Designer.cs">
+      <DependentUpon>CriarConta.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeletarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,11 +165,23 @@
     <Compile Include="EditarProduto.Designer.cs">
       <DependentUpon>EditarProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="EsqueciSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsqueciSenha.Designer.cs">
+      <DependentUpon>EsqueciSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExcluirMetPag.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExcluirMetPag.Designer.cs">
       <DependentUpon>ExcluirMetPag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FluxoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FluxoCaixa.Designer.cs">
+      <DependentUpon>FluxoCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -159,11 +189,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerirContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirContas.Designer.cs">
+      <DependentUpon>GerirContas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainGerente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainGerente.Designer.cs">
       <DependentUpon>MainGerente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainVendedor.Designer.cs">
+      <DependentUpon>MainVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="MetPag.cs" />
     <Compile Include="Produto.cs" />
@@ -175,6 +217,24 @@
     </Compile>
     <Compile Include="RemoverDespesa.Designer.cs">
       <DependentUpon>RemoverDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetarPalavras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetarPalavras.Designer.cs">
+      <DependentUpon>ResetarPalavras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetarSenha.Designer.cs">
+      <DependentUpon>ResetarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelecionarFluxo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecionarFluxo.Designer.cs">
+      <DependentUpon>SelecionarFluxo.cs</DependentUpon>
     </Compile>
     <Compile Include="SelecionarMetodoVenda.cs">
       <SubType>Form</SubType>
@@ -206,6 +266,9 @@
     <Compile Include="VisualizarVendas.Designer.cs">
       <DependentUpon>VisualizarVendas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlterarConta.resx">
+      <DependentUpon>AlterarConta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarDespesa.resx">
       <DependentUpon>CadastrarDespesa.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +280,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroVendas.resx">
       <DependentUpon>CadastroVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comissoes.resx">
+      <DependentUpon>Comissoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriarConta.resx">
+      <DependentUpon>CriarConta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeletarProduto.resx">
       <DependentUpon>DeletarProduto.cs</DependentUpon>
@@ -230,14 +299,26 @@
     <EmbeddedResource Include="EditarProduto.resx">
       <DependentUpon>EditarProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EsqueciSenha.resx">
+      <DependentUpon>EsqueciSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExcluirMetPag.resx">
       <DependentUpon>ExcluirMetPag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FluxoCaixa.resx">
+      <DependentUpon>FluxoCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GerirContas.resx">
+      <DependentUpon>GerirContas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainGerente.resx">
       <DependentUpon>MainGerente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainVendedor.resx">
+      <DependentUpon>MainVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -251,6 +332,15 @@
     </Compile>
     <EmbeddedResource Include="RemoverDespesa.resx">
       <DependentUpon>RemoverDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetarPalavras.resx">
+      <DependentUpon>ResetarPalavras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetarSenha.resx">
+      <DependentUpon>ResetarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelecionarFluxo.resx">
+      <DependentUpon>SelecionarFluxo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelecionarMetodoVenda.resx">
       <DependentUpon>SelecionarMetodoVenda.cs</DependentUpon>

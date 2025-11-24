@@ -52,6 +52,7 @@
             this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.comissõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,7 +124,8 @@
             // 
             this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarToolStripMenuItem1,
-            this.visualizarToolStripMenuItem1});
+            this.visualizarToolStripMenuItem1,
+            this.comissõesToolStripMenuItem});
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
             this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.vendasToolStripMenuItem.Text = "Vendas";
@@ -157,28 +159,28 @@
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem2.Click += new System.EventHandler(this.cadastrarToolStripMenuItem2_Click);
             // 
             // visualizarToolStripMenuItem2
             // 
             this.visualizarToolStripMenuItem2.Name = "visualizarToolStripMenuItem2";
-            this.visualizarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.visualizarToolStripMenuItem2.Text = "Visualizar";
             this.visualizarToolStripMenuItem2.Click += new System.EventHandler(this.visualizarToolStripMenuItem2_Click);
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             this.editarToolStripMenuItem1.Click += new System.EventHandler(this.editarToolStripMenuItem1_Click);
             // 
             // removerToolStripMenuItem1
             // 
             this.removerToolStripMenuItem1.Name = "removerToolStripMenuItem1";
-            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.removerToolStripMenuItem1.Text = "Remover";
             this.removerToolStripMenuItem1.Click += new System.EventHandler(this.removerToolStripMenuItem1_Click);
             // 
@@ -187,6 +189,7 @@
             this.fluxoDeCaixaToolStripMenuItem.Name = "fluxoDeCaixaToolStripMenuItem";
             this.fluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.fluxoDeCaixaToolStripMenuItem.Text = "Fluxo de Caixa";
+            this.fluxoDeCaixaToolStripMenuItem.Click += new System.EventHandler(this.fluxoDeCaixaToolStripMenuItem_Click);
             // 
             // métPagamentoToolStripMenuItem
             // 
@@ -232,6 +235,7 @@
             this.contasToolStripMenuItem.Name = "contasToolStripMenuItem";
             this.contasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.contasToolStripMenuItem.Text = "Contas";
+            this.contasToolStripMenuItem.Click += new System.EventHandler(this.contasToolStripMenuItem_Click);
             // 
             // btnAlterar
             // 
@@ -242,6 +246,7 @@
             this.btnAlterar.TabIndex = 2;
             this.btnAlterar.Text = "Alterar Dados da Conta";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnFechar
             // 
@@ -253,6 +258,13 @@
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // comissõesToolStripMenuItem
+            // 
+            this.comissõesToolStripMenuItem.Name = "comissõesToolStripMenuItem";
+            this.comissõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comissõesToolStripMenuItem.Text = "Comissões";
+            this.comissõesToolStripMenuItem.Click += new System.EventHandler(this.comissõesToolStripMenuItem_Click);
             // 
             // MainGerente
             // 
@@ -304,5 +316,6 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem comissõesToolStripMenuItem;
     }
 }

@@ -41,33 +41,47 @@ namespace QuickShop
             } else
             {
                 string usuario = txt_usuario.Text;
-                string salt = BCrypt.Net.BCrypt.GenerateSalt(12);             
+                bool encontrado = false;
+                bool correto = false;
                 foreach (Conta login in Program.contas)
                 {
                     if (login.getUsuario() == usuario)
                     {
+                        encontrado = true;
                         if (BCrypt.Net.BCrypt.Verify(txt_senha.Text, login.getSenhaHash()) == true)
                         {
+                            correto = true;
                             if (login.getTipo() == 'G')
                             {
                                 this.Hide();
                                 Form MainGerente = new MainGerente(usuario);
                                 MainGerente.Show();
                             }
+                            if (login.getTipo() == 'V')
+                            {
+                                this.Hide();
+                                Form MainVendedor = new MainVendedor(usuario);
+                                MainVendedor.Show();
+                            }
                             Program.conta_ativa = login.getId();
                         }
-                        else
-                        {
-                            MessageBox.Show("Usuário ou senha incorretos, tente novamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Usuário ou senha incorretos, tente novamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
+                }
+                if (encontrado == false)
+                {
+                    MessageBox.Show("Usuário não encontrado. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (encontrado == true && correto == false)
+                {
+                    MessageBox.Show("Usuário e/ou senha incorretos. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void lbl_esqueci_Click(object sender, EventArgs e)
+        {
+            EsqueciSenha esqueciSenha = new EsqueciSenha(this);
+            esqueciSenha.Show();
         }
     }
 }

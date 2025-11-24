@@ -155,3 +155,13 @@ C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.CadastrarDespesa.
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.EditarDespesa.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.RemoverDespesa.resources
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.VisualizarDespesas.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.SelecionarFluxo.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.FluxoCaixa.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.AlterarConta.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.CriarConta.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.GerirContas.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.ResetarPalavras.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.ResetarSenha.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.Comissoes.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.EsqueciSenha.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.MainVendedor.resources

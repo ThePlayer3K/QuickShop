@@ -16,9 +16,7 @@ namespace QuickShop
         /// </summary>
         public static List<Conta> contas;
         public static List<Produto> produtos;
-        public static List<Produto> produtos_historicos;
         public static List<MetPag> metodos_pag;
-        public static List<MetPag> metodos_pag_historicos;
         public static MySqlConnection conexao;
         public static int conta_ativa;
         [STAThread]
@@ -29,8 +27,6 @@ namespace QuickShop
             contas = new List<Conta>();
             produtos = new List<Produto>();
             metodos_pag = new List<MetPag>();
-            produtos_historicos = new List<Produto>();
-            metodos_pag_historicos = new List<MetPag>();
 
             string stringConexao;
             try
@@ -48,7 +44,7 @@ namespace QuickShop
             string localizarContas;
             try
             {
-                localizarContas = "SELECT ID, Nome, Senha_Hash, Palavra_Rec_1_Hash, Palavra_Rec_2_Hash, Palavra_Rec_3_Hash, Tipo_Conta FROM usuarios";
+                localizarContas = "SELECT ID, Nome, Senha_Hash, Palavra_Rec_1_Hash, Palavra_Rec_2_Hash, Palavra_Rec_3_Hash, Tipo_Conta FROM usuarios WHERE ativo = true";
                 MySqlCommand comandoConta = new MySqlCommand(localizarContas, conexao);
                 MySqlDataReader lerContas = comandoConta.ExecuteReader();
                 while (lerContas.Read())
@@ -93,28 +89,6 @@ namespace QuickShop
                 Application.Exit();
             }
 
-            string localizarProdutosHistoricos;
-            try
-            {
-                localizarProdutosHistoricos = "SELECT id, nome, preco, quantidade_estoque FROM produtos;";
-                MySqlCommand comandoProduto = new MySqlCommand(localizarProdutosHistoricos, conexao);
-                MySqlDataReader lerProdutos = comandoProduto.ExecuteReader();
-                while (lerProdutos.Read())
-                {
-                    int id = lerProdutos.GetInt32(0);
-                    string nome = lerProdutos.GetString(1);
-                    decimal preco = lerProdutos.GetDecimal(2);
-                    int qtd_estoque = lerProdutos.GetInt32(3);
-                    Produto produto = new Produto(id, nome, preco, qtd_estoque);
-                    produtos_historicos.Add(produto);
-                }
-                lerProdutos.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Não foi possível carregar os produtos do banco de dados.\n\nDetalhes do erro:\n", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-            }
             string localizarMetodosPag;
             try
             {
@@ -128,27 +102,6 @@ namespace QuickShop
                     decimal taxa = lerMetPag.GetDecimal(2);
                     MetPag metpag = new MetPag(id, nome, taxa);
                     metodos_pag.Add(metpag);
-                }
-                lerMetPag.Close();
-            }
-            catch
-            {
-                MessageBox.Show("Não foi possível carregar os métodos de pagamento do banco de dados.\n\nDetalhes do erro:\n", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-            }
-            string localizarMetodosPagHistoricos;
-            try
-            {
-                localizarMetodosPagHistoricos = "SELECT id, nome, taxa FROM metodo_pag;";
-                MySqlCommand comandoMetPag = new MySqlCommand(localizarMetodosPagHistoricos, conexao);
-                MySqlDataReader lerMetPag = comandoMetPag.ExecuteReader();
-                while (lerMetPag.Read())
-                {
-                    int id = lerMetPag.GetInt32(0);
-                    string nome = lerMetPag.GetString(1);
-                    decimal taxa = lerMetPag.GetDecimal(2);
-                    MetPag metpag = new MetPag(id, nome, taxa);
-                    metodos_pag_historicos.Add(metpag);
                 }
                 lerMetPag.Close();
             }

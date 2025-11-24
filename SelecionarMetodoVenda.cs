@@ -72,6 +72,11 @@ namespace QuickShop
                     adicionandoProduto.Parameters.AddWithValue("@id_produto", pv.getId());
                     adicionandoProduto.Parameters.AddWithValue("@quantidade", pv.getQuantidade());
                     adicionandoProduto.ExecuteNonQuery();
+                    string atualizarEstoque = "UPDATE produtos SET quantidade_estoque = quantidade_estoque - @qtd WHERE id = @id";
+                    MySqlCommand comandoAtualizar = new MySqlCommand(atualizarEstoque, Program.conexao);
+                    comandoAtualizar.Parameters.AddWithValue("@qtd", pv.getQuantidade());
+                    comandoAtualizar.Parameters.AddWithValue("@id", pv.getId());
+                    comandoAtualizar.ExecuteNonQuery();
                 }
                 MessageBox.Show("Venda realizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cadastroVendas.Hide();

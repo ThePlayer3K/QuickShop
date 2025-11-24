@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuickShop
 {
-    internal class Conta
+    public class Conta
     {
         private int id;
         private string nome, senha_hash, p1_hash, p2_hash, p3_hash;
@@ -56,7 +56,11 @@ namespace QuickShop
         public char getTipo()
         {
             return tipo;
-        }   
+        }
 
+        public void setUsuario(string nome)
+        {
+            this.nome = nome;
+        }
     }
 }

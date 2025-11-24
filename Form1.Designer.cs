@@ -36,6 +36,7 @@
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
+            this.lbl_esqueci = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,12 +123,25 @@
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
+            // lbl_esqueci
+            // 
+            this.lbl_esqueci.AutoSize = true;
+            this.lbl_esqueci.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline);
+            this.lbl_esqueci.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lbl_esqueci.Location = new System.Drawing.Point(472, 289);
+            this.lbl_esqueci.Name = "lbl_esqueci";
+            this.lbl_esqueci.Size = new System.Drawing.Size(199, 25);
+            this.lbl_esqueci.TabIndex = 8;
+            this.lbl_esqueci.Text = "Esqueci minha senha";
+            this.lbl_esqueci.Click += new System.EventHandler(this.lbl_esqueci_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(733, 452);
+            this.Controls.Add(this.lbl_esqueci);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.txt_usuario);
@@ -158,6 +172,7 @@
         private System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Label lbl_esqueci;
     }
 }
 

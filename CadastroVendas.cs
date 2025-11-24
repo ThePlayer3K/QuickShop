@@ -52,6 +52,11 @@ namespace QuickShop
             }
             string nome = Program.produtos.FirstOrDefault(p => p.getId() == codigo).getNome();
             decimal preco_un = Program.produtos.FirstOrDefault(p => p.getId() == codigo).getPreco();
+            if (Program.produtos.FirstOrDefault(p => p.getId() == codigo).getQtdEstoque() < quantidade)
+            {
+                MessageBox.Show("Não há produtos o suficiente para executar a venda!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             ProdutoVenda pv = new ProdutoVenda(codigo, quantidade, nome, preco_un);
             bool produto_repetido = false;
             foreach (ProdutoVenda ProdVenda in produtosVenda)

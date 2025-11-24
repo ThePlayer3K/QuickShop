@@ -89,24 +89,6 @@ namespace QuickShop
                     }
                 }
             }
-            foreach (Produto prod in Program.produtos_historicos)
-            {
-                if (prod.getId() == codProduto)
-                {
-                    if (txt_nome.Text != "")
-                    {
-                        prod.setNome(txt_nome.Text);
-                    }
-                    if (txt_preco.Text != "")
-                    {
-                        prod.setPreco(decimal.Parse(txt_preco.Text));
-                    }
-                    if (text_qtd.Text != "")
-                    {
-                        prod.setQtdEstoque(int.Parse(text_qtd.Text));
-                    }
-                }
-            }
             MessageBox.Show("Produto editado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
         }

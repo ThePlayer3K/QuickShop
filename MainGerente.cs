@@ -21,6 +21,10 @@ namespace QuickShop
             lblLog.Text = String.Format("Você está logado como: {0}", nomeConta);
         }
 
+        public void mudarLabel(string nome)
+        {
+            lblLog.Text = "Você está logado em: " + nome;
+        }
         private void MainGerente_Load(object sender, EventArgs e)
         {
 
@@ -138,6 +142,30 @@ namespace QuickShop
         {
             RemoverDespesa removerDespesa = new RemoverDespesa();
             removerDespesa.Show();
+        }
+
+        private void fluxoDeCaixaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           SelecionarFluxo selecionarFluxo = new SelecionarFluxo();
+           selecionarFluxo.Show();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            AlterarConta alterarConta = new AlterarConta(this);
+            alterarConta.Show();
+        }
+
+        private void comissõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Comissoes comissoes = new Comissoes();
+            comissoes.Show();
+        }
+
+        private void contasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GerirContas gerirContas = new GerirContas();
+            gerirContas.Show();
         }
     }
 }
