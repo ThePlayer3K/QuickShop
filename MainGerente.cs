@@ -23,7 +23,7 @@ namespace QuickShop
 
         public void mudarLabel(string nome)
         {
-            lblLog.Text = "Você está logado em: " + nome;
+            lblLog.Text = "Você está logado como: " + nome;
         }
         private void MainGerente_Load(object sender, EventArgs e)
         {

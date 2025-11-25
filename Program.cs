@@ -19,6 +19,7 @@ namespace QuickShop
         public static List<MetPag> metodos_pag;
         public static MySqlConnection conexao;
         public static int conta_ativa;
+        public static bool sair_erro = false;
         [STAThread]
         static void Main()
         {
@@ -39,7 +40,7 @@ namespace QuickShop
             catch (Exception e)
             {
                 MessageBox.Show("Não foi possível conectar ao banco de dados. Verifique se o servidor está ativo e tente novamente.\n\nDetalhes do erro:\n" + e.Message, "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                sair_erro = true;
             }
             string localizarContas;
             try
@@ -64,7 +65,7 @@ namespace QuickShop
             } catch (Exception e)
             {
                 MessageBox.Show("Não foi possível carregar as contas do banco de dados.\n\nDetalhes do erro:\n" + e.Message, "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                sair_erro = true;
             }
 
             string localizarProdutos;
@@ -108,9 +109,12 @@ namespace QuickShop
             catch
             {
                 MessageBox.Show("Não foi possível carregar os métodos de pagamento do banco de dados.\n\nDetalhes do erro:\n", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
+                sair_erro = true;
             }
-            Application.Run(new login());
+            if (sair_erro == false)
+            {
+                Application.Run(new login());
+            }
 
         }
     }

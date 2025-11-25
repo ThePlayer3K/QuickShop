@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using NAudio.Wave;
+using System.Reflection;
+using System.IO;
 
 namespace QuickShop
 {
     public partial class login : Form
     {
+        private IWavePlayer waveOut;
+        private Mp3FileReader leitor;
+        private Stream streamRecursos;
         public login()
-        {
+        { 
             InitializeComponent();
         }
 
@@ -30,6 +37,17 @@ namespace QuickShop
 
         private void login_Load(object sender, EventArgs e)
         {
+            string nomeQuickShopee = "QuickShop.quickshopee.mp3";
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            streamRecursos = assembly.GetManifestResourceStream(nomeQuickShopee);
+            if (streamRecursos == null)
+            {
+                return;
+            }
+            leitor = new Mp3FileReader(streamRecursos);
+            waveOut = new WaveOutEvent();
+            waveOut.Init(leitor);
+            waveOut.Play();
 
         }
 
