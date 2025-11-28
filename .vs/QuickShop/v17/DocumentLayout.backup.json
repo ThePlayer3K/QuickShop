@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\historicofluxos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:historicofluxos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\visualizardespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:visualizardespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\visualizardespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:visualizardespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:maingerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\historicofluxos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:historicofluxos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|c:\\users\\miyas\\desktop\\quickshop\\quickshop\\removerdespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85EFD7C-6A6C-4F3E-B446-A38994C69923}|QuickShop.csproj|solutionrelative:removerdespesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +50,95 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainGerente.cs",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\MainGerente.cs",
+              "RelativeDocumentMoniker": "MainGerente.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\MainGerente.cs",
+              "RelativeToolTip": "MainGerente.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAIwKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:48:05.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VisualizarDespesa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\VisualizarDespesa.cs",
+              "RelativeDocumentMoniker": "VisualizarDespesa.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\VisualizarDespesa.cs [Design]",
+              "RelativeToolTip": "VisualizarDespesa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:28:17.427Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainGerente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\MainGerente.cs",
+              "RelativeDocumentMoniker": "MainGerente.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\MainGerente.cs [Design]",
+              "RelativeToolTip": "MainGerente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:48:00.714Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisualizarDespesa.cs",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\VisualizarDespesa.cs",
+              "RelativeDocumentMoniker": "VisualizarDespesa.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\VisualizarDespesa.cs",
+              "RelativeToolTip": "VisualizarDespesa.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:33:31.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HistoricoFluxos.cs",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\HistoricoFluxos.cs",
+              "RelativeDocumentMoniker": "HistoricoFluxos.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\HistoricoFluxos.cs",
+              "RelativeToolTip": "HistoricoFluxos.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwCQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:33:28.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HistoricoFluxos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\HistoricoFluxos.cs",
+              "RelativeDocumentMoniker": "HistoricoFluxos.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\HistoricoFluxos.cs [Design]",
+              "RelativeToolTip": "HistoricoFluxos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:27:33.267Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RemoverDespesa.cs",
+              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\RemoverDespesa.cs",
+              "RelativeDocumentMoniker": "RemoverDespesa.cs",
+              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\RemoverDespesa.cs",
+              "RelativeToolTip": "RemoverDespesa.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwDcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:11:07.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -36,18 +148,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T05:52:41.803Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\miyas\\Desktop\\QuickShop\\QuickShop\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T02:38:04.325Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

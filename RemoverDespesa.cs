@@ -53,9 +53,14 @@ namespace QuickShop
             DialogResult confirmacao = MessageBox.Show("Tem certeza que deseja excluir a despesa " + nome_antigo + "? Esta ação é irreversível.", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (confirmacao == DialogResult.Yes)
             {
+                string deletarDosFluxos = "DELETE FROM despesas_has_fluxo_caixa WHERE despesas_id = @id";
+                MySqlCommand comandoFluxos = new MySqlCommand(deletarDosFluxos, Program.conexao);
+                comandoFluxos.Parameters.AddWithValue("@id", codigo);
+                comandoFluxos.ExecuteNonQuery();
                 string queryDeletar = "DELETE FROM despesas WHERE id = @id";
                 MySqlCommand comando = new MySqlCommand(queryDeletar, Program.conexao);
                 comando.Parameters.AddWithValue("@id", codigo);
+                comando.ExecuteNonQuery();
                 try
                 {
                     int linhasAfetadas = comando.ExecuteNonQuery();

@@ -23,39 +23,8 @@ namespace QuickShop
 
         private void FluxoCaixa_Load(object sender, EventArgs e)
         {
-            lbl_inicial.Text = "Data inicial: " + data_inicial.ToString("dd/MM/yyyy");
-            lbl_final.Text = "Data final: " + data_final.ToString("dd/MM/yyyy");
-            string procurarFluxo = "SELECT id FROM fluxo_caixa WHERE data_inicio = @data_inicio AND data_fim = @data_fim";
-            MySqlCommand comandoProcurar = new MySqlCommand(procurarFluxo, Program.conexao);
-            comandoProcurar.Parameters.AddWithValue("@data_inicio", data_inicial.Date);
-            comandoProcurar.Parameters.AddWithValue("@data_fim", data_final.Date);
-            object resultado = comandoProcurar.ExecuteScalar();
-            int id_fluxo = Convert.ToInt32(resultado);
             int novo_fluxo = 0;
-
-            if (resultado != null)
-            {
-                if (DateTime.Now.Date <= data_final.Date)
-                {
-                    string deletarDespesas = "DELETE FROM despesas_has_fluxo_caixa WHERE fluxo_caixa_id = @id_fluxo";
-                    MySqlCommand comandoDeletarDespesas = new MySqlCommand(deletarDespesas, Program.conexao);
-                    comandoDeletarDespesas.Parameters.AddWithValue("@id_fluxo", id_fluxo);
-                    comandoDeletarDespesas.ExecuteNonQuery();
-                    string deletarVendas = "DELETE FROM fluxo_caixa_has_vendas WHERE fluxo_caixa_id = @id_fluxo";
-                    MySqlCommand comandoDeletarVendas = new MySqlCommand(deletarVendas, Program.conexao);
-                    comandoDeletarVendas.Parameters.AddWithValue("@id_fluxo", id_fluxo);
-                    comandoDeletarVendas.ExecuteNonQuery();
-                    string deletarFluxo = "DELETE FROM fluxo_caixa WHERE id = @id_fluxo";
-                    MySqlCommand comandoDeletar = new MySqlCommand(deletarFluxo, Program.conexao);
-                    comandoDeletar.Parameters.AddWithValue("@id_fluxo", id_fluxo);
-                    comandoDeletar.ExecuteNonQuery();
-                    novo_fluxo = criarFluxo();
-                }
-            }
-            else
-            {
-                novo_fluxo = criarFluxo();
-            }
+            novo_fluxo = criarFluxo();
             string obterFluxoExistente = "SELECT id FROM fluxo_caixa WHERE data_inicio = @data_inicio AND data_fim = @data_fim";
             MySqlCommand comandoObter = new MySqlCommand(obterFluxoExistente, Program.conexao);
             comandoObter.Parameters.AddWithValue("@data_inicio", data_inicial);

@@ -68,7 +68,7 @@ namespace QuickShop
         private void btn_registrar_Click(object sender, EventArgs e)
         {
             string nome = lista_comissoes.SelectedItems[0].Text;
-            string valor = lista_comissoes.SelectedItems[0].SubItems[1].Text.Substring(2);
+            string valor = lista_comissoes.SelectedItems[0].SubItems[2].Text.Substring(2);
             DateTime data = picker_final.Value;
             string nome_despesa = "Comissão para " + nome + " ( " + picker_inicial.Value.ToString("dd/MM/yyyy") + "-" + picker_final.Value.ToString("dd/MM/yyyy") + ")";
             CadastrarDespesa cadastrarDespesa = new CadastrarDespesa(nome_despesa, valor, data);

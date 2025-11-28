@@ -38,6 +38,7 @@
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.comissõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.despesasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,8 @@
             this.contasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.comissõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerarFluxoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.históricoDeFluxosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,16 +136,23 @@
             // cadastrarToolStripMenuItem1
             // 
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
             // visualizarToolStripMenuItem1
             // 
             this.visualizarToolStripMenuItem1.Name = "visualizarToolStripMenuItem1";
-            this.visualizarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.visualizarToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
             this.visualizarToolStripMenuItem1.Text = "Visualizar";
             this.visualizarToolStripMenuItem1.Click += new System.EventHandler(this.visualizarToolStripMenuItem1_Click);
+            // 
+            // comissõesToolStripMenuItem
+            // 
+            this.comissõesToolStripMenuItem.Name = "comissõesToolStripMenuItem";
+            this.comissõesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.comissõesToolStripMenuItem.Text = "Comissões";
+            this.comissõesToolStripMenuItem.Click += new System.EventHandler(this.comissõesToolStripMenuItem_Click);
             // 
             // despesasToolStripMenuItem
             // 
@@ -186,6 +195,9 @@
             // 
             // fluxoDeCaixaToolStripMenuItem
             // 
+            this.fluxoDeCaixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gerarFluxoToolStripMenuItem,
+            this.históricoDeFluxosToolStripMenuItem});
             this.fluxoDeCaixaToolStripMenuItem.Name = "fluxoDeCaixaToolStripMenuItem";
             this.fluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.fluxoDeCaixaToolStripMenuItem.Text = "Fluxo de Caixa";
@@ -259,12 +271,19 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // comissõesToolStripMenuItem
+            // gerarFluxoToolStripMenuItem
             // 
-            this.comissõesToolStripMenuItem.Name = "comissõesToolStripMenuItem";
-            this.comissõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.comissõesToolStripMenuItem.Text = "Comissões";
-            this.comissõesToolStripMenuItem.Click += new System.EventHandler(this.comissõesToolStripMenuItem_Click);
+            this.gerarFluxoToolStripMenuItem.Name = "gerarFluxoToolStripMenuItem";
+            this.gerarFluxoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerarFluxoToolStripMenuItem.Text = "Gerar Fluxo";
+            this.gerarFluxoToolStripMenuItem.Click += new System.EventHandler(this.gerarFluxoToolStripMenuItem_Click);
+            // 
+            // históricoDeFluxosToolStripMenuItem
+            // 
+            this.históricoDeFluxosToolStripMenuItem.Name = "históricoDeFluxosToolStripMenuItem";
+            this.históricoDeFluxosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.históricoDeFluxosToolStripMenuItem.Text = "Histórico de Fluxos";
+            this.históricoDeFluxosToolStripMenuItem.Click += new System.EventHandler(this.históricoDeFluxosToolStripMenuItem_Click);
             // 
             // MainGerente
             // 
@@ -317,5 +336,7 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem comissõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerarFluxoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem históricoDeFluxosToolStripMenuItem;
     }
 }

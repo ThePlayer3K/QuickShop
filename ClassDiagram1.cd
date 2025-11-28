@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QuickShop.Conta">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAARAAIBAAAAAAACCEAAQgAAAAAAABAAAAABAAAAkA=</HashCode>
+      <FileName>Conta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuickShop.MetPag">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EwAAAQAgAAAAAAAAAAAAAAAAAAABAhAAAAEAABAAAgA=</HashCode>
+      <FileName>MetPag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuickShop.Produto">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAAAAAAAAAAABAAAEEAAAAABQAAANAAAQAAgE=</HashCode>
+      <FileName>Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuickShop.ProdutoVenda">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EwAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAQBEgA=</HashCode>
+      <FileName>ProdutosVenda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

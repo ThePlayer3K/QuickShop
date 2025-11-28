@@ -225,6 +225,12 @@
     <Compile Include="GerirContas.Designer.cs">
       <DependentUpon>GerirContas.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoricoFluxos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoricoFluxos.Designer.cs">
+      <DependentUpon>HistoricoFluxos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainGerente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GerirContas.resx">
       <DependentUpon>GerirContas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoricoFluxos.resx">
+      <DependentUpon>HistoricoFluxos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainGerente.resx">
       <DependentUpon>MainGerente.cs</DependentUpon>

@@ -146,8 +146,7 @@ namespace QuickShop
 
         private void fluxoDeCaixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           SelecionarFluxo selecionarFluxo = new SelecionarFluxo();
-           selecionarFluxo.Show();
+
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -166,6 +165,18 @@ namespace QuickShop
         {
             GerirContas gerirContas = new GerirContas();
             gerirContas.Show();
+        }
+
+        private void gerarFluxoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelecionarFluxo selecionarFluxo = new SelecionarFluxo();
+            selecionarFluxo.Show();
+        }
+
+        private void históricoDeFluxosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HistoricoFluxos historicoFluxos = new HistoricoFluxos();
+            historicoFluxos.Show();
         }
     }
 }
