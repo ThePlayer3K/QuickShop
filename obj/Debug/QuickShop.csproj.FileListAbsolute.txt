@@ -186,3 +186,7 @@ C:\Users\miyas\Desktop\QuickShop\QuickShop\bin\Debug\NAudio.WinMM.xml
 C:\Users\miyas\Desktop\QuickShop\QuickShop\bin\Debug\System.Security.AccessControl.xml
 C:\Users\miyas\Desktop\QuickShop\QuickShop\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.HistoricoFluxos.resources
+C:\Users\miyas\Desktop\QuickShop\QuickShop\bin\Debug\QuickShop.exe.manifest
+C:\Users\miyas\Desktop\QuickShop\QuickShop\bin\Debug\QuickShop.application
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.exe.manifest
+C:\Users\miyas\Desktop\QuickShop\QuickShop\obj\Debug\QuickShop.application
